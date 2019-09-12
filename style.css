@@ -1,4 +1,25 @@
 
+.parallax {
+	height: 250px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 0%;
+	width: 100%;
+	outline-offset: 0%;
+}
+
+.paralla {
+	height: 250px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	padding: 0%;
+	outline-offset: 0%;
+}
 .backImage
 
 {
@@ -19,7 +40,7 @@
 
 {
 
-	background: rgba(132, 201, 104, .05);
+	background: linear-gradient(rgba(132, 201, 104, .05), rgba(18, 16, 31, .4));
 
 	background-origin: center;
 
@@ -34,6 +55,7 @@
 	font-family: 'Source Sans Pro', sans-serif;
 
 	font-size: 5em;
+	color: rgba(174, 169, 150, .6);
 
 }
 
@@ -44,6 +66,7 @@
 	font-family: 'Source Sans Pro', sans-serif;
 
 	font-size: 1.5em;
+	color: rgba(174, 169, 150, .6);
 
 }
 
@@ -52,10 +75,9 @@
 {
 
 	float: left;
-
-	filter: grayscale();
-
-	border-radius: 8px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 5px;
 
 
 
