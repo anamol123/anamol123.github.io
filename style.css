@@ -1,36 +1,72 @@
+
 .backImage
+
 {
+
 	background-color: #1B1F23;
+
 	box-shadow: transparent;
+
 	box-sizing: border-box;
 
 
-}
-.jumbotron
-{
-	background: rgba(132, 201, 104, .05);
-	background-origin: center;
-	text-align: center;
-}
-#hfont
-{
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 5em;
-}
-#hfonta
-{
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 1.5em;
-}
-#headshots
-{
-	float: left;
-	filter: grayscale();
-	border-radius: 8px;
+
+
 
 }
-.subbut
+
+.jumbotron
+
 {
-	background-color: gray;
+
+	background: rgba(132, 201, 104, .05);
+
+	background-origin: center;
+
 	text-align: center;
+
+}
+
+#hfont
+
+{
+
+	font-family: 'Source Sans Pro', sans-serif;
+
+	font-size: 5em;
+
+}
+
+#hfonta
+
+{
+
+	font-family: 'Source Sans Pro', sans-serif;
+
+	font-size: 1.5em;
+
+}
+
+#headshots
+
+{
+
+	float: left;
+
+	filter: grayscale();
+
+	border-radius: 8px;
+
+
+
+}
+
+.subbut
+
+{
+
+	background-color: gray;
+
+	text-align: center;
+
 }
