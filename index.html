@@ -1,137 +1,190 @@
 <!DOCTYPE html>
-<html>
-<title>W3.CSS</title>
-
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-<link rel="stylesheet" type="text/css" href="style.css">
-<style>
-	/* Remove the navbar's default margin-bottom and rounded borders */ 
-	.navbar {
-		margin-bottom: 0;
-		border-radius: 0;
-	}
-
-	/* Add a gray background color and some padding to the footer */
-	footer {
-		background-color: #f2f2f2;
-		padding: 25px;
-	}
-</style>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width"><!-- fix Chrome device emulator -->
+	<title>VT FilmView</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="changeIndex.js"></script>
+</head>
 <body>
-	<nav class="navbar navbar-inverse">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>                        
-				</button>
-				<a class="navbar-brand" href="#">Rotaract at Virginia Tech</a>
-			</div>
-			<div class="collapse navbar-collapse" id="myNavbar">
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Gallery</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-				</ul>
+	<ul id="menu"> <!--the navigation bar in the application-->
+		<li><a href="#" class="menua" style="font-style: italic; font-size: 1.2em; font-weight: bold">FilmView</a></li>
+		<li><a href="login.html" class="menua">Log In/Sign Up</a></li>
+		<li><a href="list.html" class="menua">Speculations & Theories</a></li>
+		<li><input type="text" class="menub" placeholder="Search...."></li>
+	</ul>
+	<ul id="menuAlternate"> <!--the navigation bar in the application if user is logged in-->
+		<li><a href="#" class="menua" style="font-style: italic; font-size: 1.2em; font-weight: bold">FilmView</a></li>
+		<li><a href="#" class="menua">Hello Anamol!</a></li>
+		<li><a href="list.html" class="menua">Speculations & Theories</a></li>
+		<li><input type="text" class="menub" placeholder="Search...."></li>
+	</ul>
+
+	<div class="backImage"> <!-- div container for user profile-->
+		<a href="#" id = "clickOut" style="float: right">Log Out</a>
+
+		<img id="headshots" alt="headshot of person" src="headshot.jpg" width= 250 height=250>
+		<!-- source: https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/15941003_10208393085409031_7454481191622245915_n.jpg?_nc_cat=101&_nc_oc=AQknVShLiQ-38p4Qg6j9UQp_lFHZRNvmc_WsONy7L0oYw4OetGUEC3_qGcli8BKgRMY&_nc_ht=scontent-iad3-1.xx&oh=19e9ff94ad0effc9b318140766d37aed&oe=5E3BB181 -->
+
+		<ul id="infoList"> <!-- User personal information and quote-->
+			<li><h2>Anamol Sitaula</h2><li>
+				<li>
+					<p>"I love the smell of napalm in the morning." -Apocalypse Now</p>
+				</li>
+				<li>
+					<p>8,176 views in the past year</p>
+				</li>
+				<li>
+					<p>Favorite Film: Inception</p>
+				</li>
+			</ul>
+
+			<div id="aboutText"><!-- User paragraph to express themselves-->
+				<h2 class="hfont">About Me</h2>      
+
+				<p class="hfont">I am an avid film viewer that enjoys every genre of cinema but especially enjoy thrillers, and horror movies. I am fascinated by the directorial management of the medium to create and reveal a glimpse into an alternate reality in film. In my posted theories and films, I hope to share my love of film and my understanding and depiction of the events as well as the meaning of the many films that I view on a weekly basis.</p>
 			</div>
 		</div>
-	</nav>
-	<div class="parallax" style="background-image: url('background.jpg');">
-		<div class="parallax-content">
-		</div>
-	</div>
 
-	<div class="backImage">
-		<div class="jumbotron">
-
-			<div class="container text-center">
-
-				<img id="headshots" class="content-area col-xs-12 col-sm-12 col-md-6 col-lg-6" src="img1.jpg" width= 309.27px height=369.27px>
-
-				<h1 id="hfont" class="content-area col-xs-12 col-sm-12 col-md-6 col-lg-6">VT Rotoract</h1>      
-
-				<p id="hfonta" class="content-area col-xs-12 col-sm-12 col-md-6 col-lg-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop. </p>
-
-
-			</div>
-
-		</div>
-
-	</div>
-	<section id="primary" class="content-area col-sm-12 col-md-12 col-lg-12">
-		<main id="main" class="site-main" role="main">
-
-
-			<article id="post-266" class="post-266 post type-post status-publish format-standard hentry category-uncategorized">
-				<div class="post-thumbnail">
+		<div id="backImageAlternate"> <!-- div container for non-logged in user-->
+			<h2 style="margin: 5px;text-align: center">Top Contributors of the Week
+			</h2>
+			<a href="#" id = "clickIn" style="float: right;margin-top: -22px">Log In</a>
+			<div class="user">
+				<div class="text_left">
+					<img src="headshot.jpg" alt="Image of User">
 				</div>
-				<header class="entry-header">
-					<div class="paralla" style="background-image: url('background.jpg');">
-						<div class="parallax-content">
-						</div>
+				<div class="text_right">
+					<ul class="userInfo"> <!-- User personal information and quote and images and information taken with individual permission-->
+						<li><h4>Anamol Sitaula</h4></li>
+						<li>
+							<p>I am an aspiring film writer and critic and therefore am using this medium to start my passion and explore the world of film.</p>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+			<div class="user">
+				<div class="text_left">
+					<img src="headshot2.jpg" alt="Image of User 2">
+				</div>
+				<div class="text_right">
+					<ul class="userInfo"> <!-- User personal information and quote and images and information taken with individual permission-->
+						<li><h4>Asish Sitaula</h4></li>
+						<li>
+							<p>I am a casual filmviewer that likes blogging about the many romantic comedies that I view on a daily basis and want to share them with everyone.</p>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+			<div class="user">
+				<div class="text_left">
+					<img src="headshot3.jpg" alt="Image of User 3">
+				</div>
+				<div class="text_right">
+					<ul class="userInfo"> <!-- User personal information and quote and images and information taken with individual permission-->
+						<li><h4>Hemanth Vikash</h4></li>
+						<li>
+							<p>I am a man of film and try to find numerous parallels between the alternate realities I see online and my own personal life daily.</p>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+			<div class="user">
+				<div class="text_left">
+					<img src="headshot4.jpg" alt="Image of User 4">
+				</div>
+				<div class="text_right">
+					<ul class="userInfo"> <!-- User personal information and quote and images and information taken with individual permission-->
+						<li><h4>Sanam Patel</h4></li>
+						<li>
+							<p>I am an aspiring actor and thus view film on a daily basis to learn about the industry and practice the craft that I hold so dear.</p>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+
+		</div>
+		<div id="secondContainer"> <!-- Meant for 5 movie reccomendations-->
+			<h2 style="background-color: gray">Film of the Day</h2>
+			<div class="imagesContainer">
+				<img src="movie1.jpg" alt="Interstellar"> <!-- source: https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg-->
+				<img src="movie2.jpg" alt="3 Idiots"> <!-- source:https://m.media-amazon.com/images/M/MV5BNTkyOGVjMGEtNmQzZi00NzFlLTlhOWQtODYyMDc2ZGJmYzFhXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg-->
+				<img src="movie3.jpg" alt="City of God"> <!-- source: https://m.media-amazon.com/images/M/MV5BMGU5OWEwZDItNmNkMC00NzZmLTk1YTctNzVhZTJjM2NlZTVmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg-->
+				<img src="movie4.jpg" alt="Shutter Island"> <!-- source: https://m.media-amazon.com/images/M/MV5BYzhiNDkyNzktNTZmYS00ZTBkLTk2MDAtM2U0YjU1MzgxZjgzXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SY1000_CR0,0,675,1000_AL_.jpg-->
+				<img src="movie5.jpg" alt="Fantastic Mr. Fox"> <!-- source: https://pisces.bbystatic.com/image2/BestBuy_US/images/products/9759/9759267_sa.jpg;maxHeight=640;maxWidth=550-->
+			</div>
+		</div>
+		<div id="content">  <!-- div Meant for news of week reccomendations container-->
+			<div id="news"> <!-- div Meant for specific news articles border and margin implementation-->
+
+				<h2 style="margin: 5px;text-align: center">Most Viewed Article of the Week</h2>
+
+				<div class="story"> <!-- div storing individual article -->
+					<div class="imgPost">
+						<img src="mv4.jpg" alt="Hannibal Lecter" width="100">
+						<!-- source: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTcN8GQ674OgxyeN_tU4UqWVlCR_7cTesC-AYWerJkSHT71_wHeg -->
+						<p style="font-size: .7em; font-weight: bold">By Anamol Sitaula</p>
 					</div>
-					<h2 class="entry-title"><a href="http://www.nepal.org.vt.edu/archives/266" rel="bookmark">End of Semester Update</a></h2>		<div class="entry-meta">
-						<span class="posted-on">Posted on <a href="http://www.nepal.org.vt.edu/archives/266" rel="bookmark"><time class="entry-date published" datetime="2019-05-11T01:31:58-05:00">May 11, 2019</time></a></span>		</div><!-- .entry-meta -->
-					</header><!-- .entry-header -->
-					<div class="entry-content">
-
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.  </p>
-
-						<p>Have a great summer!</p>
-
-
-
-						<p><br></p>
-					</div><!-- .entry-content -->
-
-					<footer class="entry-footer">
-					</footer><!-- .entry-footer -->
-				</article><!-- #post-## -->
-
-				<article id="post-260" class="post-260 post type-post status-publish format-standard hentry category-uncategorized">
-					<div class="post-thumbnail">
+					<div class="imgPostRight">
+						<p class="dateText">Date: 09/07/2019</p>
+						<h3 class="title">Did Hannibal Lecter influence the deranged Buffalo Bill into a serial killer?</h3>
+						<p>Hannibal Lecter is a man that attracts both fear and respect from the authorities that he has allued and murdered....</p>
 					</div>
-					<div class="paralla" style="background-image: url('back1.jpg');">
-						<div class="parallax-content">
-						</div>
+					<div class="postInfo">
+						<a href="indivArticle.html">More on this article</a>
+						<img src="thumup.jpg" alt="thumbs up">
+						<p>3172 Likes</p>
+						<img src="thumbdown.jpg" alt="thumbs down">
 					</div>
-					<header class="entry-header">
-						<h2 class="entry-title"><a href="http://www.nepal.org.vt.edu/archives/260" rel="bookmark">Chiya Night tomorrow!</a></h2>		<div class="entry-meta">
-							<span class="posted-on">Posted on <a href="http://www.nepal.org.vt.edu/archives/260" rel="bookmark"><time class="entry-date published" datetime="2019-04-30T09:58:23-05:00">April 30, 2019</time></a></span>		</div><!-- .entry-meta -->
-						</header><!-- .entry-header -->
-						<div class="entry-content">
+				</div>
 
-							<p>
-
-
-							</p>
-
-
-
-							<figure class="wp-block-image is-resized"><img src="http://www.nepal.org.vt.edu/wp-content/uploads/chiya.jpg" alt="" class="wp-image-261" width="464" height="464" srcset="http://www.nepal.org.vt.edu/wp-content/uploads/chiya.jpg 1080w, http://www.nepal.org.vt.edu/wp-content/uploads/chiya-768x768.jpg 768w" sizes="(max-width: 464px) 100vw, 464px"></figure>
-						</div><!-- .entry-content -->
-						<div class="paralla" style="background-image: url('back1.jpg');">
-						<div class="parallax-content">
-						</div>
+				<div class="story"> <!-- div storing individual article -->
+					<div class="imgPost">
+						<img src="mv2.jpg" alt="Cobb from Inception" width="100">
+						<!-- source: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTooD0ebEpWGZVR53z8_REgu-fUN-mOCAT6Pkmt5D1u3jdZc0JC -->
+						<p style="font-size: .7em; font-weight: bold">By Anamol Sitaula</p>
 					</div>
+					<div class="imgPostRight">
+						<p class="dateText">Date: 09/07/2019</p>
+						<h3 class="title">Cobb did not actually escape the shared dream world in Inception but rather is trapped!</h3>
+						<p>The shared dream technology is a militant use of the entrance into dream sharing technology utilized by famed Cobb and Arthur....</p>
+					</div>
+					<div class="postInfo">
+						<a href="indivArticle.html">More on this article</a>
+						<img src="thumup.jpg" alt="thumbs up">
+						<p>3172 Likes</p>
+						<img src="thumbdown.jpg" alt="thumbs down">
+					</div>
+				</div>
 
-						<footer class="entry-footer">
-						</footer><!-- .entry-footer -->
-					</article><!-- #post-## -->
-					<iframe src="https://calendar.google.com/calendar/embed?src=anamol12%40vt.edu&ctz=America%2FNew_York" style="border: 0" width=100% height="800" frameborder="0" scrolling="no"></iframe>
 
-					
+				<div class="story"> <!-- div storing individual article -->
+					<div class="imgPost">
+						<img src="mv3.jpg" alt="Gandalf with eagle" width="100">
+						<!-- source: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSADahfkCC-_6hYzHoNlE1Roi3qZM2-qdUlrZZe1Dar5lNVwv2cug -->
+						<p style="font-size: .7em; font-weight: bold">By Anamol Sitaula</p>
+					</div>
+					<div class="imgPostRight">
+						<p class="dateText">Date: 09/07/2019</p>
+						<h3 class="title">Could the Lord of The Rings trilogy been avoided, Gandalf planned to fly to Mordor!</h3>
+						<p>Gandalf the Grey is seen as the wise sage of the film and thus should clearly understand the best path to Mordor. Thus, this is exactly what Gandalf planned...</p>
+					</div>
+					<div class="postInfo">
+						<a href="indivArticle.html">More on this article</a>
+						<img src="thumup.jpg" alt="thumbs up">
+						<p>3172 Likes</p>
+						<img src="thumbdown.jpg" alt="thumbs down">
+					</div>
+				</div>
+			</div><!-- #news article ends here -->
+		</div>
 
-
-				</section>
-			</body>
-			</html>
+		<footer id="footerA">Copyright 2019 VT FilmView</footer>
+	</body>
+	</html>

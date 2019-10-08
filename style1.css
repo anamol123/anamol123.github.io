@@ -1,0 +1,146 @@
+body{ /*setting margins and font for overall body*/
+	margin-top: -15px;
+	margin-bottom: -15px;
+	font-family: sans-serif;
+}
+#menu{ /*setting up menu for cases with smaller device use with fixing of margins to make elements fit*/
+	overflow: auto;
+	background: #333;
+	list-style-type: none;
+	margin-left: -7px;
+	margin-right: -5px;
+
+}
+#menu li a:hover { 
+	background-color: gray;
+}
+#menu li a,input { /*setting up the menu items properly*/
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 30px;
+	text-decoration: none;
+
+}
+#menub /* proper alignment of search bar properly*/
+{
+	margin-left: 35%;
+	margin-right: 35%;
+	color: black;
+	float: right;
+}
+#ruleContainer /* is the div for all of the rules of the page and linear gradient added to make it aesthetic*/
+{
+	margin-left: -8px;
+	margin-top: -22px;
+	margin-right: -22px;
+	background: linear-gradient(rgb(95,114,117), rgb(41,49,50));
+}
+
+.lists /*individual elements inside ruleContainer all given font size and white color to contrast background.*/
+{
+	font-family: Courier;
+	font-size: .8em;
+	color: white;
+}
+#tag /* defined text that states consequences of breaking rules, added size for emphasis*/
+{
+	font-family: Courier;
+	font-size: .85em;
+	color: white;
+}
+.leftPage /*covers defined location for text abou title, author, etc*/
+{
+	width: 33%;
+	float: left;
+	text-align: center;
+}
+.leftPage p /*additional spacing for text*/
+{
+	margin-top: 25px;
+}
+.rightPage /*set width for text input and for textArea div */
+{
+	width: 66%;
+	float: left;
+}
+.rightPage input,button,textarea /*spacing and color set for text for individual elements in div*/
+{
+	margin-top: 25px;
+	width: 90%;
+	padding: 0px;
+	color: black;
+
+}
+
+#submitA /* Button defined for image upload*/
+{
+	width: 130px;
+
+}
+#submitB /* Button defined for submit option*/
+{
+	margin-top: 10px;
+	width: 130px;
+	margin-bottom: 70px;
+}
+
+
+textarea
+{
+	height: 150px;
+}
+footer {
+	position: relative;
+	margin-top: -20px;
+	margin-bottom: -10px;
+	/* negative value of footer height */
+	height: 24px;
+	clear: both;
+	background-color: gray;
+
+
+	text-align: center;
+	font-weight: bold;
+
+}
+@media all and (min-width: 768px) { /* change of div and element layout if width greater or equal to 768*/
+
+	body{
+		margin-left: -15px;
+		margin-right: -15px;
+		margin-top: -15px;
+		font-family: sans-serif;
+	}
+	#menu{
+		overflow: auto;
+		background: #333;
+		list-style-type: none;
+
+	}
+	#menu li a,input {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 14px 30px;
+		text-decoration: none;
+
+	}
+	#ruleContainer /* overrides margin and background coloring of text*/
+	{
+		margin-left: 15px;
+		margin-top: -22px;
+		background: linear-gradient(rgb(95,114,117), rgb(41,49,50));
+	}
+	#menu .menua{
+		float: left;
+	}
+	#menub
+	{
+		float:right;
+		margin-left: 0%;
+		margin-right: 5%;
+	}
+
+
+}

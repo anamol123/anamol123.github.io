@@ -1,0 +1,168 @@
+body{ /*setting margins and font for overall body*/
+	margin-top: -15px;
+	margin-bottom: -15px;
+	font-family: sans-serif;
+	background-color: rgba(92,84,98,.7);
+}
+#menu{ /*setting up menu for cases with smaller device use with fixing of margins to make elements fit*/
+	overflow: auto;
+	background: #333;
+	list-style-type: none;
+	margin-left: -7px;
+	margin-right: -5px;
+
+}
+#menu li a,input {  /*setting up the menu items properly*/
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 30px;
+	text-decoration: none;
+
+}
+#menub /* proper alignment of search bar properly*/
+{
+	margin-left: 35%;
+	margin-right: 35%;
+	color: black;
+}
+#menu li:hover { /*allows for coloring of text when hovering*/
+	background-color: gray;
+}
+
+#websiteContainer /* div container for overall container in login page */
+{
+	background-color: white;
+	border: 10px solid black;
+	margin-top: 30px;
+	margin-bottom: 40px;
+
+	margin-left: 5%;
+	margin-right: 5%;
+	overflow: auto;
+}
+.containerLeft /* div that covers image of film in page*/
+{
+	float: left;
+	width: 50%;
+	overflow: auto;
+}
+.containerRight /* div that contains input information and text */
+{
+	width: 50%;
+	float: right;
+}
+#imageA /* image of camera reel*/
+{
+	width: 100%;
+	height: 400px;
+}
+.imageContainer p /*iv for image and sign in information*/
+{
+	width: 90%;
+	display: inline;
+}
+
+#imageB /* image for logo created FilmView logo*/
+{
+	padding-top: 20px;
+}
+
+#signText /*text stating Welcome to FilmView*/
+{
+	margin-left: 20px;
+	font-family: Courier;
+	font-size: 1.8em;
+
+}
+
+#welcomeText /*text stating Welcome Back!*/
+{
+	margin-left: 20px;
+}
+.idB /* associated with input text*/
+{
+	width: 70%;
+	margin-top: 10px;
+	margin-left: 20px;
+	color: black;
+	padding: 5px 5px;
+
+}
+
+#check /*for the a href link forgot password*/
+{
+	font-size: .7em;
+	margin-left: 60%;
+}
+
+#logins /* the button that is used to login */
+{
+	width: 70%;
+	margin-top: 10px;
+	margin-left: 20px;
+	padding: 5px 7px;
+
+}
+.textLong /*div for text about community and purpose of FilmView*/
+{
+	float: left;
+	width: 100%;
+}
+footer { 
+	position: relative;
+	margin-top: -20px;
+	margin-bottom: -10px;
+	margin-left: -7px;
+	margin-right: -7px;
+	/* negative value of footer height */
+	height: 24px;
+	clear: both;
+	background-color: gray;
+
+
+	text-align: center;
+	font-weight: bold;
+
+}
+@media all and (min-width: 768px) { /* change of div and element layout if width greater or equal to 768*/
+
+	body{
+		margin-left: -15px;
+		margin-right: -15px;
+		margin-top: -15px;
+		font-family: sans-serif;
+	}
+	#menu{
+		overflow: auto;
+		background: #333;
+		list-style-type: none;
+
+	}
+	#menu li a,input {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 14px 30px;
+		text-decoration: none;
+
+	}
+	#ruleContainer
+	{
+		margin-left: 15px;
+		margin-top: -22px;
+		background: linear-gradient(rgb(95,114,117), rgb(41,49,50));
+	}
+	#menu li:hover {
+		background-color: gray;
+	}
+	#menu .menua{
+		float: left;
+	}
+	#menub /*tells search to float right in menu*/
+	{
+		float:right;
+		margin-left: 0%;
+		margin-right: 5%;
+	}
+}

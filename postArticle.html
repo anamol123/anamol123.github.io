@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width"><!-- fix Chrome device emulator -->
+	<title>VT FilmView</title>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+	<ul id="menu"> 	<!--the navigation bar in the application-->
+		<li><a href="index.html" class="menua" style="font-style: italic; font-size: 1.2em; font-weight: bold">FilmView</a></li>
+		<li><a href="login.html" class="menua">Log In/Sign Up</a></li>
+		<li><a href="list.html" class="menua">Speculations & Theories</a></li>
+		<li><input type="text" id="menub" placeholder="Search...."></li>
+	</ul>
+	<div id="ruleContainer"> <!--div to establish guidelines, background and posting frame -->
+		<h2 id="commGuide">Community Guidelines for posting:</h2>
+		<ol>
+			<li class="lists">All posts should be either speculations on current affairs in the industry or regarding movie theories.</li>
+			<li class="lists">All posts must follow guidelines in posting and must not target any group, race, or creed.</li>
+			<li class="lists">This community is meant to share and encourage thoughts of the other users, so please respect each other.</li>
+			<li class="lists">The community does not support pornographic messages and neither does the community support lewd or provocative messages.</li>
+			<li class="lists">All existing and regulations present for online websites are upheld in the site and thus any violation of said laws will immediately be reported to the authorities.</li>
+			<li><p id ="tag">Violation of the above mentioned laws can result in a permanent ban or removal from the site itself.</p></li>
+		</ol>
+	</div>
+
+	<!--div to establish the title , author and image tag in left side of screen-->
+	<div id="pageSeperate">
+		<div class="leftPage">
+			<p id="titleTag">Title:</p>
+
+			<p id="authorTag">Author/Authors:</p>
+
+			<p id="imageButton">Image for article:</p>
+
+			<p id="messageTag">Message:</p>
+		</div>
+
+			<!--div to establish inputs in accordance with the tags mentioned-->
+		<div class="rightPage">
+			<input type="text" class="textInp" placeholder="Insert text here">
+			<input type="text" class="textInp" placeholder="Insert text here">
+			<button type="button" id="submitA" onclick="alert('Please select an image')">Image for upload</button> 
+			<textarea rows="4" cols="50">Insert Text Here</textarea>
+			<button type="button" id="submitB" onclick="alert('Article submittance attempt made!')">Submit Article</button>
+		</div>
+	</div>
+
+	<footer>Copyright 2019 VT FilmView</footer>
+</body>
+</html>

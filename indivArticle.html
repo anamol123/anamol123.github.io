@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width"><!-- fix Chrome device emulator -->
+	<title>VT FilmView</title>
+	<link rel="stylesheet" type="text/css" href="style3.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="commentIndivArticle.js"></script>
+</head>
+
+<body>
+	<ul id="menu"> <!--the navigation bar in the application-->
+		<li><a href="index.html" class="menua" style="font-style: italic; font-size: 1.2em; font-weight: bold">FilmView</a></li>
+		<li><a href="login.html" class="menua">Log In/Sign Up</a></li>
+		<li><a href="list.html" class="menua">Speculations & Theories</a></li>
+		<li><input type="text" id="menub" placeholder="Search...."></li>
+	</ul>
+	<!--header for article-->
+	<h1 id="headerTitle">Did Hannibal Lecter influence the deranged Buffalo Bill into a serial killer?</h1>
+	<div class="articles"> 	<!--div to put image of article on left and ad on right using float left and right respectively-->
+		<div class="articleLeft">
+			<img src="silenceLamb.jpg" alt="Hannibal" id="img1"> <!-- source: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTcN8GQ674OgxyeN_tU4UqWVlCR_7cTesC-AYWerJkSHT71_wHeg -->
+			<div class="names">
+				<p id="nameTagA">By Anamol Sitaula</p>
+				<p id="nameTagB">Date: 09/07/2019</p>
+			</div>
+		</div>
+		<div class="articleRight">
+			<img src="coke.jpg" alt="coke ad" class="imgAd"> <!-- source: https://www.themanufacturer.com/wp-content/uploads/2013/03/Coke-Be-Ok-Still-04-601x317.jpg-->
+			<img src="adNike.jpg" alt="Nike ad" class="imgAd"> <!--https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkhZLcRzT28taFUS4cegQcxGNC6gw8BClw1kZ-Lajh2GN8ErLI-->
+
+		</div>
+		<div class="articleCenter">  <!--article information for actual article and spacing used through three paragraph style-->
+			<p class="articleFull">Hannibal Lecter is a man that attracts both fear and respect from the authorities that he has alluded and murdered in his carnage as a cannibalistic serial killer. Therefore, in the exposition of the film, it is understandable that the FBI agents based in Quantico considered the sudden willingness of Hannibal to aid them as suspicious. They believed that Hannibal was simply using a newly situated agent Starling as a means to which control the FBI and arrange for a plea deal due his prison sentence.</p>
+			<p class="articleFull">However, what many viewers failed to see where the subtle hints left throughout the movie, indicating the correspondence between Buffalo Bill and Hannibal Lecter. In his many conversations with Starling, Hannibal claims to know the type of man Bill is, what motivates him, and is confident in his ploy to divert attention to Bill so he in coordinate his own escape. Furthermore, it is evident that Bill is created in a way so that the audience is disgusted but also pitied, as his sexuality and need to fit in in the form he views himself makes him both a menace but also a victim of society. Thus, Hannibal, a trained psychiatrist could manipulate Buffalo Bill to commit murders on a massive scale, and thus lead his own value to increase. </p>
+			<p class="articleFull">Therefore, with the established correspondence between Bill and Lecter, and the easily manipulated mind of Bill, it is quite clear that Hannibal forced Bill to commit the said murders and then aided in finding Bill to provide a false sense of trust with the FBI. This allowed Hannibal to escape as he did and commit the heinous act in the end of the film.</p>
+		</div>
+	</div>
+	<button type="button" id="comment">View Comments</button> 	<!--comment section of the article accessed by toggle using jquery-->
+	<div class="comments">
+		<h4 id="comTitle">Comments:</h4>
+		<p class="p1">I think this is a great article but I disagree and believe that instead that Jane Foster is responisble.</p>
+		<div id="p2c">
+			<p class="p2">By Anamol Sitaula</p> 
+			<p class="p2">Posted 3 hours ago</p>    
+			<a href="#" class="p2">Report</a>
+		</div>
+		<p class="p1">@Anamol Sitaula Have you even seen this movie, have we even watched the same movie?</p>
+		<div id="p3c">
+			<p class="p3">By Anamol Sitaula</p> 
+			<p class="p3">Posted 3 hours ago</p>    
+			<a href="#" class="p3">Report</a>
+		</div>
+		<p class="p1">I think this is a great article but I think that neither is responsible.</p>
+		<div id="p4c" style="margin-bottom: 25px">
+			<p class="p4">By Anamol Sitaula</p> 
+			<p class="p4">Posted 3 hours ago</p>    
+			<a href="#" class="p4">Report</a>
+		</div>
+	</div>
+
+	<footer id="footerA">Copyright 2019 VT FilmView</footer>
+</body>
+</html>
